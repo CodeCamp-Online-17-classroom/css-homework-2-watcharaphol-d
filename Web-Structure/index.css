@@ -1,0 +1,431 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========================= Navbar section ========================= */
+.navbar {
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 1px 10px #00000022;
+}
+
+@media only screen and (max-width: 899.20px) {
+    .navbar {
+        position: sticky;
+    }
+}
+
+.nav-name {
+    margin: 20px 0px;
+}
+
+.nav-name a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.nav-a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    color: #000000;
+    border-radius: 40px;
+    transition: background-color 0.5s;
+    transition-timing-function: ease;
+}
+
+.nav-a:hover {
+    background-color: #7a8b9f;
+    color: white;
+}
+
+/* ========================= Body-content ========================= */
+.section {
+    position: relative;
+}
+
+.chat-box {
+    position: fixed;
+    right: 1vw;
+    bottom: 2vh;
+    z-index: 1;
+    line-height: 1rem;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #00000099;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #00000099;
+    opacity: 0.8;
+    transition: opacity 0.3s, color 0.3s;
+    transition-timing-function: ease;
+}
+
+.chat-box:active {
+    color: #00000099
+}
+
+.chat-box:hover {
+    opacity: 1;
+    color: #000000CC;
+}
+
+.footer-1 {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ebedee 100%);
+}
+
+/* ========================= Section-1 ========================= */
+.section1-bg {
+    background: url(./../PIC/section1-bg.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.section1-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.section1-content p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.section1-content p:nth-child(3) {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.section1-content h1 {
+    font-size: 8rem;
+    line-height: 7.5rem;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 899.20px) {
+    .section1-content h1 {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width: 697.60px) {
+    .section1-content h1 {
+        font-size: 5rem;
+    }
+}
+
+.section1-content a {
+    display: inline-block;
+    margin: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #000000;
+    border: 5px solid black;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    transition-timing-function: ease;
+}
+
+.section1-content a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ========================= Section-gap ========================= */
+.section-gap {
+    width: 100%;
+    height: 100px;
+}
+
+/* ========================= Section-2 ========================= */
+.section2-bg {
+    background-image: linear-gradient(to top, #ffffff 0%, #c9cdd8 31%, #7a8b9f 100%);
+}
+
+.section2-content {
+    background-image: linear-gradient(135deg, #fdfcfb66 0%, #e2d1c366 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.section2-item1 .first-letter::first-letter {
+    text-decoration: overline;
+}
+
+.section2-item1 {
+    padding: 100px 100px 50px 100px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.section2-item1 h1 {
+    font-size: 3rem;
+}
+
+.section2-link {
+    text-align: center;
+}
+
+.section2-link a {
+    display: inline-block;
+    margin: 20px 20px 0px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #000000;
+    border: 3px solid black;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    transition-timing-function: ease;
+}
+
+.section2-link a:hover {
+    background-color: white;
+    color: black;
+}
+
+.section2-item2 {
+    width: 90%;
+    background: url(./../PIC/offic-girl-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 899.20px) {
+    .section2-content {
+        display: block;
+    }
+
+    .section2-item1 {
+        padding: 50px;
+    }
+
+    .section2-item2 {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+/* ========================= Section-3 ========================= */
+.section3-bg {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-top: 20px solid #ffffffff;
+}
+
+.section3-item1 .first-letter::first-letter {
+    text-decoration: overline;
+}
+
+.section3-item1 h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0px 100px 30px;
+}
+
+.section3-item2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.section3-item2>div {
+    border: 6px solid black;
+    width: 330px;
+    padding: 30px;
+    margin: 0px 20px 30px;
+    background-color: #ffffff77;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section3-item2 h2 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.section3-item2 hr {
+    border: 1px solid black;
+}
+
+.section3-item2 p {
+    margin: 10px 0px 20px;
+}
+
+.section3-item2 a,
+.section3-item3 a {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #000000;
+    border: 3px solid black;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    transition-timing-function: ease;
+}
+
+.section3-item2 a:hover,
+.section3-item3 a:hover {
+    background-color: white;
+    color: black;
+}
+
+.section3-item3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ========================= Section-4 ========================= */
+.section4-bg {
+    background-color: white;
+}
+
+.section4-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 20px 50px;
+}
+
+.section4-item1 {
+    width: 40%;
+}
+
+.section4-item1 h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.section4-item1 h2::first-letter {
+    text-decoration: overline;
+}
+
+.section4-item1 p {
+    padding: 10px 50px;
+    font-size: 1.1rem;
+}
+
+.section4-item1 div {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.section4-item1 div a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #00000055;
+    transition: background-color 0.3s, color 0.3s;
+    transition-timing-function: ease;
+}
+
+.section4-item1 div a:hover {
+    color: white;
+    background-color: black;
+}
+
+.section4-item2 {
+    width: 40%;
+    padding: 0px 50px;
+}
+
+.section4-item2 label {
+    display: block;
+    padding: 15px 0px 5px;
+    font-weight: 500;
+}
+
+.section4-item2 textarea,
+.section4-item2 input {
+    resize: none;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #00000099;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.section4-item2 textarea:hover,
+.section4-item2 input:hover {
+    outline: 1px solid #00000099;
+}
+
+.section4-item2 form input:last-child {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    color: white;
+    background-color: #000000;
+    border: 3px solid black;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    transition-timing-function: ease;
+}
+
+.section4-item2 form input:hover {
+    background-color: white;
+    color: black;
+    outline: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 899.20px) {
+    .section4-content {
+        display: block;
+        padding: 20px 50px;
+    }
+
+    .section4-item1,
+    .section4-item2 {
+        width: 100%;
+    }
+}
